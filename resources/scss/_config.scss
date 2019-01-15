@@ -1,0 +1,101 @@
+/**
+ *
+ * $uration to be used throughout all your application stylesheets. This
+ * also includes some Bootstrap UI $uration that you may change if desired.
+ *
+ */
+
+// colors: grays
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray-lighter: lighten($gray-base, 93.5%);
+$gray-superlight: #fff;
+
+// colors: brand
+$brand-primary: #06a3b4;
+$brand-success: #85ad99;
+$brand-info: #858593;
+$brand-warning: #ccda28;
+$brand-danger: #d24626;
+
+// colors: bah
+$color-darkblue: #253745;
+$color-darkteal: #0a5155;
+$color-teal: #06a3b4;
+$color-lightgreen: #85ad99;
+$color-greyblue: #55555a;
+$color-lightgreyblue: #858593;
+$color-yellow: #ccda28;
+$color-green: #71a84e;
+$color-red: #d24626;
+
+// body
+$body-bg: $gray-superlight;
+$text-color: $gray-dark;
+
+// links
+$link-color: $brand-primary;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+// typography
+$font-family-sans-serif: 'Calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-base: $font-family-sans-serif;
+
+// font sizes
+$font-size-base: 14px;
+$font-size-large: ceil(($font-size-base * 1.25)); // 18px
+$font-size-med: floor(($font-size-base * 1.15)); // 16px
+$font-size-small: ceil(($font-size-base * .85)); // 12px
+
+$font-size-h1: floor(($font-size-base * 2.9)); // 40px
+$font-size-h2: floor(($font-size-base * 2.15)); // 30px
+$font-size-h3: ($font-size-base * 2); // 28px
+$font-size-h4: ceil(($font-size-base * 1.25)); // 18px
+$font-size-h5: $font-size-base; // 14px
+$font-size-h6: ceil(($font-size-base * .85)); // 12px
+
+// line height
+$line-height-base: 1.4;
+
+// headings
+$headings-font-family: 'Oswald', sans-serif;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
+// horizontal rule
+$hr-border: $gray-lighter;
+
+// forms
+$forms-input-size: 40px;
+
+// border radius
+$border-radius-base: 4px;
+$border-radius-large: 6px;
+$border-radius-small: 3px;
+
+// media query breakpoints
+$screen-xs: 480px;
+$screen-xs-plus: 520px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1350px;
+
+// grid
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+// container widths
+$container-tablet: (720px + $grid-gutter-width);
+$container-desktop: (940px + $grid-gutter-width);
+$container-large-desktop: (1140px + $grid-gutter-width);
+
+// font awesome
+$fa-font-path: '../fonts';

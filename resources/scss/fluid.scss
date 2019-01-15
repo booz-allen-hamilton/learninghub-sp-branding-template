@@ -1,0 +1,52 @@
+// application configuration variables
+@import 'config';
+
+// make fluid
+.main-container.container {
+  width: 100%;
+  padding: 0;
+}
+
+
+#s4-workspace {
+  .content-container {
+    section.main {
+      overflow: hidden;
+    }
+
+    // main section
+    section.main {
+      .main-row {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        article.main-body.col-xs-12.col-md-9 {
+          padding: 0;
+
+          @media screen and (min-width: $screen-md) {
+            padding: 0;
+          }
+        }
+        [class*="col-"] {
+          min-height: 0;
+        }
+      }
+    }
+
+    // webpart
+    .ms-webpartzone-cell {
+      + .ms-webpartzone-cell {
+        margin-top: 0;
+      }
+    }
+
+    // universities
+    .universities-container {
+      background: $gray-lighter;
+
+      @media screen and (min-width: $screen-md) {
+        padding: 100px 0;
+      }
+    }
+  }
+}

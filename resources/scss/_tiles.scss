@@ -1,0 +1,62 @@
+@import 'config';
+
+.tiles-container {
+  a.tiles-link {
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 150px;
+    color: $color-darkblue;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: $screen-sm){
+      width: 33.333333%;
+      float: left;
+    }
+    @media screen and (min-width: $screen-md){
+      height: 220px;
+    }
+
+    .tiles-link-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      padding: 35px;
+
+      .tiles-link-title {
+        font-family: $headings-font-family;
+        display: block;
+        font-size: ceil(($font-size-base * 1.7));
+
+        @media screen and (min-width: $screen-md){
+          font-size: floor(($font-size-base * 2.3));
+        }
+      }
+      .tiles-link-desc {
+        @media screen and (min-width: $screen-md){
+          font-size: $font-size-med;
+        }
+      }
+    }
+
+    &.tiles-link-0,
+    &.tiles-link-2,
+    &.tiles-link-4 {
+      color: #fff;
+    }
+    &.tiles-link-0 {
+      background: $color-darkblue;
+    }
+    &.tiles-link-2 {
+      background: $color-teal;
+    }
+    &.tiles-link-4 {
+      background: $color-green;
+    }
+  }
+}

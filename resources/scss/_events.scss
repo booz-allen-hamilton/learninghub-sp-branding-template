@@ -1,0 +1,40 @@
+.event-item {
+  clear: both;
+  margin: 20px auto;
+
+  .event-mini {
+    float: left;
+    background: url('../img/bah-event-mini.svg') 0 0 / 100% auto;
+    width: 77px;
+    height: 93px;
+    text-align: center;
+    font-family: $headings-font-family;
+    text-transform: uppercase;
+
+    .event-mini-mon {
+      color: $gray-superlight;
+      font-size: $font-size-large;
+      margin-top: 15px;
+    }
+    .event-mini-date {
+      color: $color-teal;
+      font-size: floor(($font-size-base * 2.6)); // 36px
+    }
+  }
+  .event-info {
+    margin-left: 100px;
+
+    .event-title {
+      font-size: ceil(($font-size-base * 1.7)); // 24px
+      line-height: ceil(($font-size-base * 1.85)); // 26px
+      margin-bottom: 10px;
+
+      a {
+        color: $color-darkteal;
+      }
+    }
+    .event-description {
+      font-size: $font-size-med;
+    }
+  }
+}

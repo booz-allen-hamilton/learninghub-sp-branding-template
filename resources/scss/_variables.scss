@@ -1,0 +1,27 @@
+// colors: brand
+$c-blue: #0054a6;
+$c-yellow: #ffce34;
+$c-lightgrey: #f9f9f8;
+$c-medgrey: #999;
+$c-darkgrey: #333;
+$c-darkblue: #102c47;
+
+$c-originalblue: #0454a6;
+$c-lightblue: #cdd9ee;
+
+// borders
+$b-base: solid 1px #c4c4c4;
+$b-rad: 10px;
+$b-rad-sm: 7px;
+
+// fonts
+$f-reg: 'Roboto', sans-serif;
+
+// sizes
+$s-base: 16px;
+$s-xs: $s-base * .75; // 12px
+$s-sm: $s-base;
+$s-md: $s-base * 1.25; // 20px
+$s-lg: $s-base * 1.5; // 24px
+$s-xl: $s-base * 1.75; // 28px
+$s-xxl: $s-base * 2; // 32px

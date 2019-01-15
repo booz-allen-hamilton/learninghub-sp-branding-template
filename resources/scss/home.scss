@@ -1,0 +1,114 @@
+// application configuration variables
+@import 'config';
+
+// make fluid
+.main-container.container {
+  width: 100%;
+  padding: 0;
+}
+
+
+#s4-workspace {
+  .content-container {
+    section.main {
+      overflow: hidden;
+    }
+
+    // main section
+    section.main {
+      .main-row {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        article.main-body.col-xs-12.col-md-9 {
+          padding: 0;
+
+          @media screen and (min-width: $screen-md) {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    // hero
+    .hero-container {
+      .hero-text {
+        text-align: left;
+        left: 30px;
+
+        @media screen and (min-width: $screen-sm){
+          left: 15%;
+        }
+      }
+    }
+
+    // webpart
+    .ms-webpartzone-cell {
+      + .ms-webpartzone-cell {
+        margin-top: 0;
+      }
+    }
+
+    // universities
+    .universities-container {
+      background: $gray-lighter;
+
+      @media screen and (min-width: $screen-md) {
+        padding: 100px 0;
+      }
+    }
+  }
+}
+
+// scrolling indicator
+.scroll-down-arrow {
+  animation-name: bounceIn;
+  animation-duration: 450ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+}
+.scroll-down {
+  .scroll-down-arrow {
+    animation-name: fadeOut;
+    animation-duration: 250ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-delay: 0;
+  }
+}
+
+@keyframes fadeOut {
+   0% {
+     opacity: .7;
+   }
+   99% {
+     height: 60px;
+     width: 60px;
+     opacity: 0;
+   }
+   100% {
+     height: 0;
+     width: 0;
+     opacity: 0;
+   }
+}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: .7;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: .7;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}

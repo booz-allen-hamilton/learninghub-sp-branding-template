@@ -1,0 +1,78 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<!-- FIND and REPLACE all instances of 'BAHEvents' and change it to the name you want your template to be -->
+		<title>BAHEvents</title>
+
+
+		<!-- the fields listed use this syntax 'property name' which is used in the scripts below {property display name} which is used in the CSWP edit pane and :'managed property' the actual field name you want to get the value of, this can be a placeholder name that you can fill out in the edit pane or the ACTUAL managed property name -->
+
+		<!--[if gte mso 9]>
+		<xml>
+			<mso:CustomDocumentProperties>
+				<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+				<mso:ManagedPropertyMapping msdt:dt="string">'ListItemID'{ListItemID}:'ListItemID','Title'{Title}:'Title','Description'{Description}:'Description','StartDate'{StartDate}:'RefinableDate00'</mso:ManagedPropertyMapping>
+				<mso:MasterPageDescription msdt:dt="string">This Item Display Template will show a small thumbnail icon next to a hyperlink of the item title, with an additional line that is available for a custom managed property.</mso:MasterPageDescription>
+				<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+				<mso:TargetControlType msdt:dt="string">;#Content Web Parts;#</mso:TargetControlType>
+				<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+				<mso:HtmlDesignStatusAndPreview msdt:dt="string">http://protososandbox.sqtdemo.com/sandbox/seom/_catalogs/masterpage/Display Templates/Content Web Parts/Item_DisplayTemplate_BAHEvents.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+				<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+			</mso:CustomDocumentProperties>
+		</xml>
+		<![endif]-->
+
+	</head>
+
+	<body>
+	    <script>
+	        $includeLanguageScript(this.url, "~sitecollection/_catalogs/masterpage/Display Templates/Language Files/{Locale}/CustomStrings.js");
+	    </script>
+
+		<div id="BAHEvents">
+
+      <!-- all javascript code is surrounded by unique comment tags with hashtag and underscore -->
+			<!-- inside here we are storing values of above fields in variables using the PROPERTY NAME -->
+
+			<!--#_
+
+				var title = $getItemValue(ctx, "Title");
+        var description = $getItemValue(ctx, "Description");
+        var id = $getItemValue(ctx, "ListItemID");
+        var startdate = $getItemValue(ctx, "StartDate");
+
+        var parseDate = new Date(startdate);
+        var month = parseDate.format('MMM');
+        var date = parseDate.format('%d');
+
+        var trimDesc = $('<div>'+description.value+'</div>').text();
+        if(trimDesc.length > 200){
+          trimDesc = trimDesc.substring(0,200) + '...';
+        }
+
+				var thisSite = _spPageContextInfo.webServerRelativeUrl;
+				var thisU = '';
+
+				if(thisSite.indexOf('digitalu') != -1){
+					thisU = 'SD';
+			} else {
+			thisU = 'CyberFSO';
+		}
+
+			_#-->
+
+    <div class="event-item row no-gutter">
+      <div class="event-mini">
+        <div class="event-mini-mon">_#= month =#_</div>
+        <div class="event-mini-date">_#= date =#_</div>
+      </div>
+      <div class="event-info">
+        <div class="event-title">
+          <a href="https://boozallen.sharepoint.com/Pages/Event-Details.aspx?eventId=_#= id =#_&sourceUrl=https://boozallen.sharepoint.com/sites/_#= thisU =#_/&listTitle=Firmwide%20Events" alt="_#= title =#_">_#= title =#_</a>
+        </div>
+        <div class="event-desc">_#= trimDesc =#_</div>
+      </div>
+    </div>
+
+	</div>
+</body>
+</html>

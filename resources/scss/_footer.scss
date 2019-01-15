@@ -1,0 +1,110 @@
+footer {
+  background: $gray-dark;
+  padding: 30px 0;
+
+  @media screen and (min-width: $screen-sm){
+    padding: 50px 0;
+  }
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-column {
+    + .footer-column {
+      @media screen and (max-width: 767px){
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .footer-contact-item {
+    color: $color-lightgreyblue;
+
+    a {
+      color: $color-lightgreyblue;
+    }
+    + .footer-contact-item {
+      margin-top: 30px;
+    }
+    .info {
+      p {
+        margin: auto;
+      }
+    }
+  }
+
+  #related-sites {
+    .related-site-link {
+      margin-top: 5px;
+
+      a {
+        color: $gray-superlight;
+      }
+    }
+  }
+
+  .footer-site-nav {
+    ul.root {
+      li {
+        &.static {
+          display: block;
+
+          a {
+            color: $gray-superlight;
+
+            &.ms-core-listMenu-selected {
+              font-weight: normal;
+            }
+            &:hover {
+              color: $gray-superlight;
+            }
+          }
+          + li {
+            margin-top: 5px;
+          }
+        }
+        &.ms-listMenu-editLink {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.footer-bottom {
+  background: #000;
+  padding: 30px;
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $screen-sm){
+    padding: 12px;
+  }
+
+  .footer-bottom-container {
+    padding: 0;
+
+    @media screen and (min-width: $screen-sm){
+      text-align: center;
+    }
+
+    a {
+      margin: 0 5px;
+      color: $gray-superlight;
+      float: left;
+      clear: left;
+
+      @media screen and (min-width: $screen-sm){
+        display: inline-block;
+        float: none;
+
+        + a:before {
+          content: "|";
+          position: relative;
+          left: -5px;
+        }
+      }
+    }
+  }
+}

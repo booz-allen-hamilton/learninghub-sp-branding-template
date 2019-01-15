@@ -1,0 +1,37 @@
+// resources
+.resources-container {
+  text-align: center;
+
+  @media screen and (min-width: $screen-sm){
+    text-align: left;
+  }
+  .resource-item {
+    box-shadow: 3px -3px 7px 0 rgba(0,0,0,.35);
+    display: inline-block;
+    color: $color-greyblue;
+    margin: 13px 26px 13px 0;
+    vertical-align: top;
+    height: 295px;
+    overflow: hidden;
+    text-decoration: none;
+    opacity: .6;
+
+    &:hover  {
+      text-decoration: none;
+    }
+    .resource-content {
+      padding: 25px;
+      width: 255px;
+      text-align: left;
+
+      h2.resource-title {
+        text-transform: none !important;
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  a.resource-item {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,17 @@
+// application configuration variables
+@import 'config';
+
+// main section
+section.main {
+  article {
+    @media screen and (min-width: $screen-md) {
+      padding: 30px 30px 30px 0;
+    }
+  }
+  // pull sidebar to right
+  aside {
+    @media screen and (min-width: $screen-md) {
+      float: right !important;
+    }
+  }
+}

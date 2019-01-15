@@ -1,0 +1,98 @@
+.news-container {
+  background: $color-darkblue;
+
+  @media screen and (min-width:$screen-sm){
+    height: 500px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    height:35px;
+    width: 100%;
+    z-index: 10;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00000000',GradientType=0 );
+  }
+
+  ul.ui-carousel-nav {
+    display: none;
+
+    @media screen and (min-width: $screen-sm){
+      display: block;
+      left: calc(58.33333% + 30px);
+      right: auto;
+      bottom: 30px;
+
+      @media screen and (min-width:$screen-lg){
+        left: calc(58.33333% + 70px);
+      }
+    }
+
+    li {
+      &.ui-active {
+        button {
+          background: $color-green;
+        }
+      }
+      button {
+        background: $gray-superlight;
+        border: none;
+      }
+    }
+  }
+
+  ul.ui-carousel-shaker {
+    height: 100%;
+
+    .news-slide {
+      height: 100%;
+      vertical-align: top;
+
+      .news-slide-image {
+        overflow: hidden;
+        height: 100%;
+
+        img {
+          position: relative;
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+      }
+      .news-slide-content {
+        padding: 30px;
+        color: $gray-superlight;
+        height: 100%;
+
+        @media screen and (min-width:$screen-lg){
+          padding: 60px 70px;
+        }
+
+        h1 {
+          color: $gray-superlight;
+          margin-top: 0;
+          font-size: $font-size-h3;
+
+          @media screen and (min-width:$screen-xl){
+            font-size: $font-size-h1;
+          }
+        }
+        .news-slide-title {
+          color: $gray-superlight;
+          margin-bottom: 10px;
+          font-size: $font-size-h3;
+          line-height: $font-size-h3;
+
+          @media screen and (min-width:$screen-sm){
+            font-size: $font-size-h2;
+          }
+        }
+        .news-slide-btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

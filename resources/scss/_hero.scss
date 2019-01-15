@@ -1,0 +1,96 @@
+.hero-container {
+  overflow: hidden;
+  position: relative;
+
+  .hero-image {
+    height: 200px;
+    background: $gray-base;
+
+    @media screen and (min-width: $screen-sm){
+      height: 300px;
+    }
+    @media screen and (min-width: $screen-md){
+      height: 435px;
+    }
+
+    img {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%,0);
+      opacity: .7;
+    }
+  }
+  .hero-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translate(0,-50%);
+
+    @media screen and (min-width: $screen-md){
+      bottom: 90px;
+      top: auto;
+      transform: none;
+    }
+
+    span.hero-text-pluses {
+      position: relative;
+      display: inline-block;
+
+      &:before,
+      &:after {
+        @media screen and (min-width: $screen-sm){
+          content: "";
+          background: url('../img/bah-pluses.svg') 0 0 / 35px 35px;
+          position: absolute;
+          width: 1600px;
+          height: 100%;
+          top: 0;
+          opacity: .4;
+        }
+      }
+      &:before {
+        @media screen and (min-width: $screen-sm){
+          right: 100%;
+        }
+      }
+      &:after {
+        @media screen and (min-width: $screen-sm){
+          left: 100%;
+        }
+      }
+      span.hero-text-content {
+        font-family: $headings-font-family;
+        color: $gray-superlight;
+        text-transform: uppercase;
+        font-size: $font-size-h1; // 40px
+        line-height: $font-size-h1; // 40px
+        display: none;
+        padding: 0 35px;
+
+        @media screen and (min-width: $screen-sm){
+          font-size: ceil(($font-size-base * 4.25)); // 60px
+          line-height: ceil(($font-size-base * 4.25)); // 60px
+        }
+      }
+    }
+  }
+  li.carousel-slide {
+    overflow: hidden;
+
+    .hero-image {
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  .ui-carousel-nav {
+    li + li {
+      margin-left:8px;
+    }
+    button {
+      border-width: 1px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

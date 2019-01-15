@@ -1,0 +1,294 @@
+// header
+header {
+  background: $color-greyblue;
+  padding: 20px 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  .banner-row {
+    margin: auto;
+
+    h2.brand {
+      margin-left: -20px;
+      display: inline-block;
+
+      @media screen and (min-width: $screen-sm){
+        margin-left: 0;
+      }
+
+      &.university-brand {
+        display: none;
+
+        @media screen and (min-width: $screen-sm){
+          display: inline-block;
+          margin-left: 0;
+        }
+      }
+
+      a {
+        color: $gray-superlight;
+        font-family: $headings-font-family;
+        text-transform: uppercase;
+        font-size: $font-size-base * 2; // 28px
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .breadcrumb-title {
+      display: inline-block;
+      color: $gray-superlight;
+      font-family: $headings-font-family;
+      text-transform: uppercase;
+      font-size: $font-size-h3;
+      margin-left: -20px;
+      line-height: 1.1;
+
+      @media screen and (min-width: $screen-sm){
+        margin-left: 0;
+      }
+
+      .breadcrumb-separator,
+      .breadcrumb-item {
+        display: none;
+
+        @media screen and (min-width: $screen-sm){
+          display: inline;
+        }
+      }
+
+      a {
+        color: $gray-superlight;
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    #togglemenu {
+      position:absolute;
+      appearance:none;
+      cursor:pointer;
+      left:-100%;
+      top:-100%;
+
+      + label {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        font-size: $font-size-large;
+        text-transform: uppercase;
+        color: $gray-superlight;
+        background: $color-teal;
+        line-height: 13px;
+        padding: 15px 20px 0;
+
+        @media screen and (min-width: $screen-sm){
+          padding: 15px 40px 0;
+        }
+
+        .nav-bar {
+          height: 3px;
+          background: $gray-superlight;
+          display: block;
+          width: 60%;
+          margin: auto auto 5px;
+          transition: all 0.2s ease;
+          opacity: 1;
+          position: relative;
+        }
+        .nav-btn-text {
+          margin-top: 10px;
+          display: block;
+        }
+      }
+      &:checked {
+        + label {
+          .nav-bar-1 {
+            transform: rotate(45deg);
+            top: 9px;
+          }
+          .nav-bar-2 {
+            opacity: 0;
+          }
+          .nav-bar-3 {
+            transform: rotate(-45deg);
+            top: -7px;
+          }
+        }
+        ~ nav {
+          max-height: 500px;
+        }
+      }
+    }
+    #togglesearch {
+      position:absolute;
+      appearance:none;
+      cursor:pointer;
+      left:-100%;
+      top:-100%;
+
+      + label {
+        position: absolute;
+        cursor: pointer;
+        right: 75px;
+        top: 0;
+        bottom: 0;
+        background: none;
+        padding: 17px 30px 0;
+        width: 93px;
+
+        @media screen and (min-width: $screen-sm){
+          right: 127px;
+        }
+
+        .search-icon {
+          img {
+            width: 35px;
+          }
+        }
+        span.x-bar {
+          height: 3px;
+          background: $gray-superlight;
+          display: block;
+          position: absolute;
+          width: 40%;
+          transform: rotate(45deg);
+          left: 30%;
+          top: 45%;
+          display: none;
+
+          & + span.x-bar {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      &:checked {
+        ~ .search {
+          width: 245px;
+          opacity: 1;
+          overflow: visible;
+
+          @media screen and (min-width: $screen-sm){
+            width: 300px;
+          }
+        }
+
+        + label {
+          .search-icon {
+            display: none;
+          }
+          span.x-bar {
+            display: block;
+          }
+        }
+      }
+    }
+    nav {
+      position: absolute;;
+      background: rgba(0,0,0,.7);
+      right: 0;
+      transition: all 0.2s ease;
+      top: 74px;
+      max-height: 0;
+      overflow: hidden;
+
+      ul.root {
+        li {
+          &.static {
+            display: block;
+
+            & + li.static {
+              border-top: solid 1px $gray-dark;
+            }
+            a.static {
+              color: $gray-superlight;
+              font-size: $font-size-med;
+              display: block;
+              padding: 10px 30px;
+              min-width: 300px;
+              font-weight: normal;
+
+              &:hover {
+                background: $color-teal;
+                text-decoration: none;
+              }
+            }
+          }
+          &.ms-listMenu-editLink {
+            display: none;
+          }
+        }
+      }
+    }
+    .search {
+      position: absolute;
+      right: 155px;
+      top: 0px;
+      bottom: 0;
+      width: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.2s ease;
+
+      @media screen and (min-width: $screen-sm){
+        right: 220px;
+      }
+
+      > .ms-webpart-chrome {
+        height: 100%;
+
+        > .ms-WPBody {
+          height: 100%;
+
+          > div {
+            height: 100%;
+
+            #SearchBox {
+              height: 100%;
+
+              .ms-srch-sb {
+                height: 100%;
+
+                > input {
+                  height: 100%;
+                  font-family: $font-family-sans-serif;
+                  font-size: ceil(($font-size-base * 1.5)); // 21px
+                  padding: 0 95px 0 20px;
+                  border-radius: 0;
+                }
+                > .ms-srch-sb-searchLink,
+                > .ms-srch-sb-navLink {
+                  height: 100%;
+
+                  &:hover {
+                    background: none;
+                  }
+                  &:after {
+                    margin-top: 28px;
+                    color: $color-greyblue;
+                  }
+                }
+                .ms-qSuggest-container {
+                  border-radius: 0;
+                  top: 73px;
+                  box-shadow: none;
+                  border: solid 1px $color-greyblue;
+                  border-top: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

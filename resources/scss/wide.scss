@@ -1,0 +1,26 @@
+// application configuration variables
+@import 'config';
+
+#s4-workspace {
+  // hide left sidebar
+  aside {
+    display: none;
+  }
+
+  // main section
+  section.main {
+    .main-row {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      article.main-body.col-xs-12.col-md-9 {
+        width: 100%;
+        padding: 30px;
+
+        @media screen and (min-width: $screen-md) {
+          padding: 30px 0;
+        }
+      }
+    }
+  }
+}

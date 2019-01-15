@@ -1,0 +1,241 @@
+// body
+body {
+  color: $color-greyblue;
+  font-size: $font-size-med;
+
+  *:focus {
+    outline: none;
+  }
+}
+
+// buttons
+button {
+  &.bah-btn {
+    border-radius: 0;
+  }
+}
+a {
+  &.bah-cta {
+    display: inline-block;
+    background: $color-green;
+    color: $gray-superlight;
+    padding: 15px 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    i {
+      margin-left: 10px;
+    }
+  }
+  &.right {
+    float: right;
+  }
+  &.view-all-events-btn {
+    margin: 20px auto;
+  }
+}
+
+.content-container {
+  padding-top: 73px;
+
+  .main-row {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+// grid
+.row {
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+
+    [class*="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// main
+#s4-workspace {
+
+  &.no-ribbon {
+    overflow: auto !important;
+  }
+
+  h1,
+  h2,
+  .ms-rtestate-field h1,
+  h1.ms-rteElement-H1,
+  .ms-rtestate-field h2,
+  h2.ms-rteElement-H2,
+   {
+    font-family: $headings-font-family;
+    font-weight: normal;
+    text-transform: uppercase;;
+  }
+  h1,
+  .ms-rtestate-field h1,
+  h1.ms-rteElement-H1 {
+    color: $color-teal;
+  }
+  h2.ms-webpart-titleText {
+    font-size: $font-size-h3;
+    color: $color-teal;
+    margin-bottom: 20px;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-sans-serif;
+    font-weight: bold;
+    color: $color-darkblue;
+  }
+  h4.footer-heading,
+  h4.footer-info-heading {
+    color: $gray-superlight;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  // responsive images in rich text
+  .ms-rtestate-field img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  // accordion
+  .bah-accordion {
+    .ui-accordion-content {
+      padding: 10px 20px;
+    }
+    h4.ui-accordion-header {
+      color: #fff;
+      padding: 15px 15px 15px 50px;
+      position: relative;
+      background: #ccc;
+      position: relative;
+      border-top: solid 10px #fff;
+      border-bottom: solid 10px #fff;
+      cursor: pointer;
+      background: $color-teal;
+
+      &.accordion-blue {
+        background: #355e9f;
+      }
+      &.accordion-purple {
+        background: #95358f;
+      }
+      &.accordion-lightblue {
+        background: #00a8d0;
+      }
+      &.accordion-red {
+        background: #d54728;
+      }
+      &.accordion-green {
+        background: #73aa4f;
+      }
+      &.accordion-yellow {
+        background: #f7a81b;
+      }
+
+      span.ui-accordion-header-icon {
+        font-family: fontawesome;
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        left: 20px;
+
+        &.ui-icon-triangle-1-e:before {
+          content: "";
+        }
+        &.ui-icon-triangle-1-s:before {
+          content: "";
+        }
+      }
+    }
+  }
+  // accordion
+  aside {
+    .bah-accordion {
+      h4.ui-accordion-header {
+        border-color: #eee;
+      }
+    }
+  }
+
+}
+
+// main section
+section.main {
+  h1.page-title {
+    display: none;
+  }
+  article {
+    padding: 30px;
+
+    @media screen and (min-width: $screen-md) {
+      padding: 30px 0 30px 30px;
+    }
+  }
+}
+
+// grey bar / page content
+.grey-container {
+  display: none;
+  padding: 50px 30px;
+  background: $gray-lighter;
+  text-align: center !important;
+  font-size: ceil(($font-size-base * 1.7)); // 24px
+
+  * {
+    text-align: center !important;
+  }
+}
+
+// sidebar
+aside.main-sidebar {
+  background: #eee;
+  padding: 40px 30px;
+  display: none;
+}
+
+// leadership
+.triangle-container {
+  @media screen and (min-width: $screen-sm){
+    padding:75px 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// scrolling indicator
+.scroll-down-arrow {
+  position: absolute;
+  z-index: 9;
+  color: $gray-superlight !important;
+  font-size: 36px;
+  background: $color-teal;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 67px;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  display: block;
+}
