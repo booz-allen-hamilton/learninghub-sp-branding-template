@@ -6,5 +6,13 @@
     "gulp": "^3.9.1",
     "gulp-propeller": "^1.1.1",
     "propeller-sharepoint": "^1.0.1"
-  }
+  },
+  "dependencies": {},
+  "name": "learninghub-sp-branding-template",
+  "version": "2.0.x",
+  "description": "Learning Hub SharePoint Branding Template",
+  "main": "app.js",
+  "repository": "git@github.com:booz-allen-hamilton/learninghub-sp-branding-template.git",
+  "author": "alimalik <malik_ali@bah.com>",
+  "license": ""
 }
