@@ -37,7 +37,7 @@
         left: 30px;
 
         @media screen and (min-width: $screen-sm){
-          left: 15%;
+          left: 12.5%; // hero container changed from 15% to 12.5%
         }
       }
     }

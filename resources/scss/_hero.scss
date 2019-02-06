@@ -3,7 +3,7 @@
   position: relative;
 
   .hero-image {
-    height: 200px;
+    height: 100%; //hero-image changed from 200px to 100%
     background: $gray-base;
 
     @media screen and (min-width: $screen-sm){
@@ -24,12 +24,12 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
+    top: 5rem; //hero-text changed from 50% to 5rem
     transform: translate(0,-50%);
 
     @media screen and (min-width: $screen-md){
       bottom: 90px;
-      top: auto;
+      top: 8rem; //hero-text screen-md changed from auto to 8rem
       transform: none;
     }
 
