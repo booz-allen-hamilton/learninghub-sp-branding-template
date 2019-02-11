@@ -89,6 +89,8 @@ a {
     font-size: $font-size-h3;
     color: $color-teal;
     margin-bottom: 20px;
+    margin-top: 6rem; //added margin spacing to the title textText
+    margin-bottom: -1rem; //added margin spacing to limit space b/t h2 and cards
   }
   h3,
   h4,
@@ -232,7 +234,7 @@ aside.main-sidebar {
   border-radius: 50%;
   text-align: center;
   line-height: 67px;
-  bottom: 5%;
+  bottom: 1rem; //scroll-down-arrow changed from 5% to 1rem
   left: 50%;
   margin-left: -30px;
   opacity: 0;
