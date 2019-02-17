@@ -1,14 +1,25 @@
 Arguments: 
+<<<<<<< HEAD
   /usr/local/Cellar/node/11.10.0/bin/node /usr/local/bin/yarn init
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+=======
+  /usr/local/Cellar/node/11.9.0/bin/node /usr/local/bin/yarn init
+
+PATH: 
+  /anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+>>>>>>> 315b51eb73f72903b84af0ae45f290852e6f6090
 
 Yarn version: 
   1.13.0
 
 Node version: 
+<<<<<<< HEAD
   11.10.0
+=======
+  11.9.0
+>>>>>>> 315b51eb73f72903b84af0ae45f290852e6f6090
 
 Platform: 
   darwin x64
@@ -36,6 +47,7 @@ npm manifest:
       "gulp-propeller": "^1.1.1",
       "propeller-sharepoint": "^1.0.1"
     },
+<<<<<<< HEAD
     "name": "learninghub-sp-branding-template",
     "version": "2.0.0",
     "description": "Learning Hub SharePoint Branding Template",
@@ -43,6 +55,9 @@ npm manifest:
     "repository": "git@github.com:booz-allen-hamilton/learninghub-sp-branding-template.git",
     "author": "Ali Malik <ali.m.malik@gmail.com>",
     "license": "MIT"
+=======
+    "dependencies": {}
+>>>>>>> 315b51eb73f72903b84af0ae45f290852e6f6090
   }
 
 yarn manifest: 
