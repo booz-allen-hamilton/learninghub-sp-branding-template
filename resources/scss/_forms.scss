@@ -4,7 +4,7 @@
  *
  */
 
-// inputs
+/* inputs */
 textarea,
 input[type=text],
 input[type=file],
@@ -34,7 +34,7 @@ textarea.ms-long {
   width: 100%;
 }
 
-// html inputs
+/* html inputs */
 .ms-inputBox {
   border: 1px solid $gray-lighter;
   margin: 0 0 $font-size-base;
@@ -46,12 +46,12 @@ textarea.ms-long {
   border-color: darken($gray-lighter, 10%);
 }
 
-// user fields
+/* user fields */
 .ms-usereditor {
   width: 100%;
 }
 
-// field names
+/* field names */
 .ms-formfieldlabelcontainer {
   color: $gray;
   font-size: $font-size-base;
@@ -70,7 +70,7 @@ div.ms-formfieldlabelcontainer span.ms-formfieldlabel {
   padding: 0;
 }
 
-// field values
+/* field values */
 table.ms-core-tableNoSpace {
   width: 100%;
 
@@ -115,7 +115,7 @@ span[id*="_RichImageField_"] img {
 
 }
 
-// form toolbar
+/* form toolbar */
 .ms-formtoolbar {
   margin: 0;
 

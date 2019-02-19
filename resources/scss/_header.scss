@@ -1,4 +1,4 @@
-// header
+/* header */
 header {
   background: $color-greyblue;
   padding: 20px 30px;
@@ -30,7 +30,7 @@ header {
         color: $gray-superlight;
         font-family: $headings-font-family;
         text-transform: uppercase;
-        font-size: $font-size-base * 2; // 28px
+        font-size: $font-size-base * 2; /* 28px */
         text-decoration: none;
         display: block;
 
@@ -261,7 +261,7 @@ header {
                 > input {
                   height: 100%;
                   font-family: $font-family-sans-serif;
-                  font-size: ceil(($font-size-base * 1.5)); // 21px
+                  font-size: ceil(($font-size-base * 1.5)); /* 21px */
                   padding: 0 95px 0 20px;
                   border-radius: 0;
                 }

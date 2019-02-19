@@ -1,21 +1,20 @@
-// hide elements
 header {
   display: none;
 }
 
-// remove top padding for sticky header
+/*  remove top padding for sticky header */
 .content-container {
   padding-top: 0;
 }
 
-// main section
+/*  main section */
 section.main {
   max-width: 1280px;
   margin: auto;
   padding: 50px;
 }
 
-// web parts
+/*  web parts */
 .ms-webpartzone-cell {
   padding: 10px !important;
 }

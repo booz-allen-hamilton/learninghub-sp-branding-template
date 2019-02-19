@@ -1,13 +1,13 @@
-// resources
+/*  resources  */
 .resources-container {
   text-align: center;
-  margin-bottom: 7rem; //added space between cards and footer
+  margin-bottom: 7rem; /* added space between cards and footer */
 
   @media screen and (min-width: $screen-sm){
     text-align: left;
   }
   .resource-item {
-    box-shadow: 5px -5px 12px 0 rgba(0,0,0,0.35); // changed box-shadow to match zone kind of
+    box-shadow: 5px -5px 12px 0 rgba(0,0,0,0.35); /*  changed box-shadow to match zone kind of */
     display: inline-block;
     color: $color-greyblue;
     margin: 13px 26px -1rem 0;

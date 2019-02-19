@@ -1,7 +1,6 @@
-// application configuration variables
 @import 'config';
 
-// make fluid
+/*  make fluid */
 .main-container.container {
   width: 100%;
   padding: 0;
@@ -14,7 +13,7 @@
       overflow: hidden;
     }
 
-    // main section
+    /*  main section */
     section.main {
       .main-row {
         padding-top: 0;
@@ -33,14 +32,14 @@
       }
     }
 
-    // webpart
+    /*  webpart */
     .ms-webpartzone-cell {
       + .ms-webpartzone-cell {
         margin-top: 0;
       }
     }
 
-    // universities
+    /*  universities */
     .universities-container {
       background: $gray-lighter;
 

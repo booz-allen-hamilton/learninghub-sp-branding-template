@@ -4,7 +4,7 @@
  *
  */
 
-// button
+/* button */
 .btn,
 button,
 input[type=reset],
@@ -19,7 +19,7 @@ button.ms-button-emphasize,
 .ms-rteElement-ButtonRowWarning a,
 .ms-rteElement-ButtonRowDanger a {
 
-  // default button style
+  /* default button style */
   background-color: $gray-dark;
   border: 0;
   color: $gray-superlight;
@@ -30,7 +30,7 @@ button.ms-button-emphasize,
   line-height: $headings-line-height;
   padding: $font-size-base;
 
-  // hover
+  /* hover */
   &:hover {
     background-color: lighten($gray-dark, 5%);
     text-decoration: none;
@@ -38,7 +38,7 @@ button.ms-button-emphasize,
 
 }
 
-// button color: primary
+/* button color: primary */
 .btn.btn-primary,
 .ms-rteElement-ButtonRowPrimary a {
   background-color: $brand-primary;
@@ -48,7 +48,7 @@ button.ms-button-emphasize,
   }
 }
 
-// button color: success
+/* button color: success */
 .btn.btn-success,
 .ms-rteElement-ButtonRowSuccess a {
   background-color: $brand-success;
@@ -58,7 +58,7 @@ button.ms-button-emphasize,
   }
 }
 
-// button color: info
+/* button color: info */
 .btn.btn-info,
 .ms-rteElement-ButtonRowInfo a {
   background-color: $brand-info;
@@ -68,7 +68,7 @@ button.ms-button-emphasize,
   }
 }
 
-// button color: warning
+/* button color: warning */
 .btn.btn-warning,
 .ms-rteElement-ButtonRowWarning a {
   background-color: $brand-warning;
@@ -78,7 +78,7 @@ button.ms-button-emphasize,
   }
 }
 
-// button color: danger
+/* button color: danger */
 .btn.btn-danger,
 .ms-rteElement-ButtonRowDanger a {
   background-color: $brand-danger;
@@ -88,14 +88,14 @@ button.ms-button-emphasize,
   }
 }
 
-// cancel buttons
+/* cancel buttons */
 .btn-cancel,
 input[type=submit][value*="Cancel"],
 input[type=button][value*="Cancel"] {
   background-color: $gray-light;
 }
 
-// disabled buttons
+/* disabled buttons */
 .btn-disabled,
 input[type=reset][disabled],
 input[type=button][disabled],
@@ -105,7 +105,7 @@ input[type=submit][disabled] {
   cursor: default;
 }
 
-// small buttons
+/* small buttons */
 .btn-sm,
 .ms-wpadder button,
 button.ms-buttonheightwidth,
@@ -116,7 +116,7 @@ input[type=button][value="..."],
   padding: ceil($font-size-base / 2);
 }
 
-// large buttons
+/* large buttons */
 .btn-lg {
   font-size: ceil($font-size-base * 1.125);
   padding: ceil($font-size-base * 1.25);

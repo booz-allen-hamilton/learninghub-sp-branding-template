@@ -1,13 +1,12 @@
-// application configuration variables
 @import 'config';
 
 #s4-workspace {
-  // hide left sidebar
+  /*  hide left sidebar  */
   aside {
     display: none;
   }
 
-  // main section
+  /*  main section */
   section.main {
     .main-row {
       padding-top: 0;

@@ -3,7 +3,7 @@
   position: relative;
 
   .hero-image {
-    height: 100%; //hero-image changed from 200px to 100%
+    height: 100%; /* hero-image changed from 200px to 100% */
     background: $gray-base;
 
     @media screen and (min-width: $screen-sm){
@@ -24,12 +24,12 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 5rem; //hero-text changed from 50% to 5rem
+    top: 5rem; /* hero-text changed from 50% to 5rem */
     transform: translate(0,-50%);
 
     @media screen and (min-width: $screen-md){
       bottom: 90px;
-      top: 8rem; //hero-text screen-md changed from auto to 8rem
+      top: 8rem; /* hero-text screen-md changed from auto to 8rem */
       transform: none;
     }
 
@@ -63,14 +63,14 @@
         font-family: $headings-font-family;
         color: $gray-superlight;
         text-transform: uppercase;
-        font-size: $font-size-h1; // 40px
-        line-height: $font-size-h1; // 40px
+        font-size: $font-size-h1; /*  40px */
+        line-height: $font-size-h1; /*  40px */
         display: none;
         padding: 0 35px;
 
         @media screen and (min-width: $screen-sm){
-          font-size: ceil(($font-size-base * 4.25)); // 60px
-          line-height: ceil(($font-size-base * 4.25)); // 60px
+          font-size: ceil(($font-size-base * 4.25)); /*  60px */
+          line-height: ceil(($font-size-base * 4.25)); /*  60px */
         }
       }
     }

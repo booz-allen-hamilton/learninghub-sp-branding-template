@@ -4,15 +4,15 @@
  *
  */
 
-// suite bar
+/*  suite bar */
 #suiteBarDelta {
 
-  // buttons
+  /*  buttons */
   button {
     border-radius: 0;
   }
 
-  // buttons: hover
+  /*  buttons: hover */
   .ms-bgc-tdr,
   .ms-bgc-tdr-h:hover,
   .ms-bgc-tdr-f:focus,
@@ -22,20 +22,20 @@
     background-color: $brand-primary;
   }
 
-  // suite bar background
+  /*  suite bar background */
   #suiteBarLeft,
   .o365cs-base .o365cs-topnavLinkBackground-2,
   .o365cs-base.o365cst.o365spo.o365cs-topnavBGColor-2 {
     background-color: $gray-dark;
   }
 
-  // app launcher
+  /*  app launcher */
   .o365cs-base.o365cst .ms-bgc-tp,
   .o365cs-base .o365cs-appLauncherBackground {
     background: $brand-primary;
   }
 
-  // suite bar dividers
+  /*  suite bar dividers */
   .o365cs-nav-header16 .o365cs-nav-pinToTop,
   .o365cs-nav-header16 .o365cs-nav-o365Branding,
   .o365cs-nav-header16 .o365cs-nav-rightAlign .o365cs-nav-button {
@@ -48,7 +48,7 @@
 
 }
 
-// suite bar and ribbon typography
+/*  suite bar and ribbon typography */
 #suiteBar,
 #s4-ribbonrow,
 #suiteBarDelta {
@@ -56,19 +56,19 @@
   font-size: 14px;
 }
 
-// reset text decoration on suite bar and ribbon links
+/*  reset text decoration on suite bar and ribbon links */
 #suiteBar a,
 #s4-ribbonrow a,
 #suitebarDelta a {
   text-decoration: none;
 }
 
-// page status
+/*  page status */
 #pageStatusBar[class] {
   border: 0;
 }
 
-// hide overflow on workspace
+/*  hide overflow on workspace */
 #s4-workspace {
   overflow: visible;
 }

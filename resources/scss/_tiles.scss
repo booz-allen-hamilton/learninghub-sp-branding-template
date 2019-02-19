@@ -17,7 +17,7 @@
       float: left;
     }
     @media screen and (min-width: $screen-md){
-      height: 9.5rem; //tile-container and tiles-link changed from 220px to 9.5rem
+      height: 9.5rem; /* tile-container and tiles-link changed from 220px to 9.5rem  */
     }
 
     .tiles-link-text {
@@ -27,14 +27,16 @@
       transform: translate(-50%,-50%);
       width: 100%;
       padding: 35px;
-      //-webkit-transition: font-size .75s ease;
-      //-moz-transition: font-size .75s ease;
-      //-o-transition: font-size .75s ease;
-      //transition: font-size .75s ease;
+      /* -webkit-transition: font-size .75s ease;  */
+      /* -moz-transition: font-size .75s ease;  */
+      /* -o-transition: font-size .75s ease;  */
+      /* transition: font-size .75s ease;  */
 
-      //&:hover {
-        //font-size:1.2rem;
-      //}
+      /* 
+      &:hover {
+        font-size:1.2rem;
+      }  
+      */
 
       .tiles-link-title {
         font-family: $headings-font-family;

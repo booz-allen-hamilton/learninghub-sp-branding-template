@@ -4,7 +4,7 @@
  *
  */
 
-// search box
+/*  search box */
 .ms-srch-sb > input,
 .ms-srch-sbLarge > input {
   height: $forms-input-size;
@@ -16,13 +16,13 @@
 
 }
 
-// search link
+/*  search link */
 .ms-srch-sb,
 .ms-srch-sbLarge {
   position: relative;
 }
 
-// search button
+/*  search button */
 .ms-srch-sb > .ms-srch-sb-searchLink,
 .ms-srch-sbLarge > .ms-srch-sb-searchLink {
   border-radius: 0 $border-radius-base $border-radius-base 0;
@@ -36,15 +36,15 @@
   top: 0;
   width: $forms-input-size;
 
-  // hide image
+  /*  hide image */
   img {
     display: none;
   }
 
-  // replace image with Font Awesome icon
+  /*  replace image with Font Awesome icon */
   &::after {
     @include fa-icon();
-    content: $fa-var-search; // Font Awesome: 'search' icon
+    content: $fa-var-search; /*  Font Awesome: 'search' icon */
   }
 
   &:hover {
@@ -55,7 +55,7 @@
 
 }
 
-// search scope navigation
+/*  search scope navigation */
 .ms-srch-sb-navLink,
 .ms-srch-sb > .ms-srch-sb-navLink {
   color: $gray-light;
@@ -68,15 +68,15 @@
   top: 0;
   width: $forms-input-size;
 
-  // hide image
+  /*  hide image */
   img {
     display: none;
   }
 
-  // replace image with Font Awesome icon
+  /*  replace image with Font Awesome icon */
   &::after {
     @include fa-icon();
-    content: $fa-var-caret-down; // Font Awesome: 'caret-down' icon
+    content: $fa-var-caret-down; /*  Font Awesome: 'caret-down' icon */
   }
 
   &:hover,
@@ -88,7 +88,7 @@
 
 }
 
-// search drop-down menus
+/*  search drop-down menus */
 .ms-qSuggest-container {
   border-radius: 0 0 $border-radius-base $border-radius-base;
   margin: 0;
@@ -107,7 +107,7 @@
 
 }
 
-// search scope tabs
+/*  search scope tabs */
 .ms-srchnav-item h2 {
   font-size: $font-size-large;
 
@@ -124,13 +124,13 @@
 
 }
 
-// search refiners
+/*  search refiners */
 .ms-ref-unsel-toggle:hover,
 .ms-ref-refiner #Value > a:hover {
   color: $brand-primary;
 }
 
-// date refiner
+/*  date refiner */
 .histogram_bar_active {
   background-color: $gray-lighter;
   border-top-color: $brand-primary;
@@ -157,7 +157,7 @@
   border-color: $brand-primary;
 }
 
-// search results
+/*  search results */
 .ms-srch-item,
 .ms-srch-people-item {
   margin: 0 0 $line-height-computed;
@@ -181,37 +181,37 @@
   word-break: break-word;
 }
 
-// people results
+/*  people results */
 .ms-srch-people-item #UserInfoContainer {
   margin-left: 100px;
 }
 
-// hover panels
+/*  hover panels */
 .ms-srch-hover-subTitle h3 {
   font-size: 1em;
 }
 
-// hide results hover panel on smaller screens
+/*  hide results hover panel on smaller screens */
 @media (max-width: $screen-md-max) {
 
-  // hide hover panel
+  /*  hide hover panel */
   .ms-srch-hover-outerContainer {
     display: none !important;
   }
 
-  // wrap ellipsis lines
+  /*  wrap ellipsis lines */
   .ms-srch-ellipsis {
     white-space: normal;
   }
 
-  // results are block elements
+  /*  results are block elements */
   .ms-srch-item-body,
   .ms-srch-item-path,
   .ms-srch-item-summary {
     display: block;
   }
 
-  // full width results
+  /*  full width results */
   .ms-srch-item,
   .ms-srch-item-path,
   .ms-srch-people-item,
@@ -221,7 +221,7 @@
 
 }
 
-// paging
+/*  paging */
 .ms-srch-result #Paging {
   margin: $line-height-computed 0;
 
@@ -244,7 +244,7 @@
   color: $gray-light;
 }
 
-// replace paging arrows with Font Awesome icons
+/*  replace paging arrows with Font Awesome icons */
 .ms-promlink-button {
   border: 0;
   font-size: 1em;
@@ -252,25 +252,25 @@
   padding: 0;
   width: auto;
 
-  // hide image
+  /*  hide image */
   .ms-promlink-button-image {
     display: none;
   }
 
-  // replace image with Font Awesome icon
+  /*  replace image with Font Awesome icon */
   &::after {
     @include fa-icon();
-    content: $fa-var-chevron-right; // Font Awesome: 'chevron-right' icon
+    content: $fa-var-chevron-right; /*  Font Awesome: 'chevron-right' icon */
   }
 
 }
 
-// next icon
+/*  next icon */
 li:first-child .ms-promlink-button::after {
-  content: $fa-var-chevron-left; // Font Awesome: 'chevron-left' icon
+  content: $fa-var-chevron-left; /*  Font Awesome: 'chevron-left' icon  */
 }
 
-// search tools
+/*  search tools */
 .ms-srch-result #ResultFooter li {
   padding: 0;
 

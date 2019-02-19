@@ -33,7 +33,7 @@
         font-family: $headings-font-family;
         text-transform: uppercase;
         color: $color-teal;
-        font-size: $font-size-base * 1.5; // 21px
+        font-size: $font-size-base * 1.5; /*  21px */
         padding-bottom: 5px;
         border-bottom: solid 1px $color-teal;
         font-weight: normal;
@@ -72,7 +72,7 @@
               left: 1px;
               top: -2px;
               font-family: fontawesome;
-              font-size: ceil(($font-size-base * .7)); // 10px
+              font-size: ceil(($font-size-base * .7)); /*  10px */
             }
           }
         }
@@ -179,7 +179,7 @@
       margin-bottom: 35px;
 
       .title {
-        font-size: ceil(($font-size-base * 1.7)); // 24px
+        font-size: ceil(($font-size-base * 1.7)); /*  24px */
 
         a.partnership-title {
           font-weight: bold;

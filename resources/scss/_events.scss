@@ -18,15 +18,15 @@
     }
     .event-mini-date {
       color: $color-teal;
-      font-size: floor(($font-size-base * 2.6)); // 36px
+      font-size: floor(($font-size-base * 2.6)); /* 36px */
     }
   }
   .event-info {
     margin-left: 100px;
 
     .event-title {
-      font-size: ceil(($font-size-base * 1.7)); // 24px
-      line-height: ceil(($font-size-base * 1.85)); // 26px
+      font-size: ceil(($font-size-base * 1.7)); /* 24px */
+      line-height: ceil(($font-size-base * 1.85)); /* 26px */
       margin-bottom: 10px;
 
       a {

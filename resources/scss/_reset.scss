@@ -5,7 +5,7 @@
  *
  */
 
-// links
+/*  links */
 a,
 .ms-tv-item:link,
 .ms-tv-header:link,
@@ -17,7 +17,7 @@ a,
   color: $link-color;
 }
 
-// links: visited
+/*  links: visited */
 a:visited,
 .ms-vb a:visited,
 .ms-vb2 a:visited,
@@ -29,7 +29,7 @@ a:visited,
   color: $link-color;
 }
 
-// links: hover
+/*  links: hover */
 a:hover,
 a:focus,
 a.ms-tv-item:hover,
@@ -43,7 +43,7 @@ a.ms-tv-header:hover,
   text-decoration: $link-hover-decoration;
 }
 
-// background-color
+/*  background-color */
 .ms-srch-sbLarge,
 .ms-picker-header,
 .ms-rteStyle-Normal,
@@ -59,7 +59,7 @@ li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
   background-color: transparent;
 }
 
-// border
+/*  border */
 .ms-SPZone,
 .ms-WPBorder,
 .ms-WPAddButton,
@@ -79,7 +79,7 @@ li > a.ms-core-listMenu-item.ms-core-listMenu-selected:hover,
   border: 0;
 }
 
-// color
+/*  color */
 .ms-vb,
 .ms-pb,
 .ms-vb2,
@@ -142,12 +142,12 @@ a.ms-acal-apanel-title:hover span,
   color: inherit;
 }
 
-// cursor
+/*  cursor */
 .ms-inlineSearch-searchImgSpanBase {
   cursor: pointer;
 }
 
-// display
+/*  display */
 .ms-srch-sb,
 .ms-srch-sbLarge,
 .ms-webpart-zone,
@@ -158,13 +158,13 @@ a.ms-acal-apanel-title:hover span,
   display: block;
 }
 
-// float
+/*  float */
 #SearchBox,
 .ms-srch-people-item #UserInfoContainer {
   float: none;
 }
 
-// font-family
+/*  font-family */
 .ms-metadata,
 .ms-textLarge,
 .ms-textXLarge,
@@ -186,7 +186,7 @@ a.ms-calloutLink:visited,
   font-family: inherit;
 }
 
-// font-size
+/*  font-size */
 .headertitle,
 .headertitle a,
 .ms-sectionheader,
@@ -202,32 +202,32 @@ a.ms-calloutLink:visited,
   font-size: inherit;
 }
 
-// font-weight
+/*  font-weight */
 .headertitle,
 .headertitle a,
 .headertitle a:link {
   font-weight: normal;
 }
 
-// height
+/*  height */
 .ms-srch-sb > input,
 input.ms-navedit-editButton,
 .ms-InlineSearch-Outline-Baseline {
   height: auto;
 }
 
-// line-height
+/*  line-height */
 p.ms-rteElement-P,
 .ms-rtestate-field p {
   line-height: inherit;
 }
 
-// list-style
+/*  list-style */
 .ms-core-listMenu-root {
   list-style: none;
 }
 
-// margin
+/*  margin */
 .ms-srch-item,
 .level-section,
 .ms-srch-result,
@@ -249,7 +249,7 @@ p.ms-rteElement-P,
   margin: 0;
 }
 
-// min-width
+/*  min-width */
 button,
 input[type=reset],
 input[type=button],
@@ -257,7 +257,7 @@ input[type=submit] {
   min-width: 0;
 }
 
-// padding
+/*  padding */
 .level-header,
 .ms-srch-item,
 .ms-SPZoneLabel,
@@ -279,12 +279,12 @@ input[type=submit] {
   padding: 0;
 }
 
-// text-decoration
+/*  text-decoration */
 .ms-core-menu-link:hover {
   text-decoration: none;
 }
 
-// text-transform
+/*  text-transform */
 .ms-sectionheader,
 .ms-newdoc-callout-text,
 .ms-formlabel .ms-standardheader,
@@ -292,14 +292,14 @@ input[type=submit] {
   text-transform: none;
 }
 
-// white-space
+/*  white-space */
 .ms-ref-ellipsis,
 .ms-webpart-titleText nobr,
 .ms-formlabel .ms-standardheader nobr {
   white-space: normal;
 }
 
-// width
+/*  width */
 #OtherValue,
 #SubmitValue,
 .histogram_container,
@@ -314,12 +314,12 @@ input[type=submit] {
   width: 100% !important;
 }
 
-// accents
+/*  accents */
 .ms-accentText {
   color: $brand-primary;
 }
 
-// subtle colors
+/*  subtle colors */
 .ms-vh,
 .ms-ph,
 .ms-vh2,

@@ -1,4 +1,4 @@
-// body
+/* body */
 body {
   color: $color-greyblue;
   font-size: $font-size-med;
@@ -8,7 +8,7 @@ body {
   }
 }
 
-// buttons
+/* buttons */
 button {
   &.bah-btn {
     border-radius: 0;
@@ -49,7 +49,7 @@ a {
   }
 }
 
-// grid
+/* grid */
 .row {
   &.no-gutter {
     margin-left: 0;
@@ -62,7 +62,7 @@ a {
   }
 }
 
-// main
+/* main */
 #s4-workspace {
 
   &.no-ribbon {
@@ -74,7 +74,7 @@ a {
   .ms-rtestate-field h1,
   h1.ms-rteElement-H1,
   .ms-rtestate-field h2,
-  h2.ms-rteElement-H2,
+  h2.ms-rteElement-H2
    {
     font-family: $headings-font-family;
     font-weight: normal;
@@ -89,8 +89,8 @@ a {
     font-size: $font-size-h3;
     color: $color-teal;
     margin-bottom: 20px;
-    margin-top: 6rem; //added margin spacing to the title textText
-    margin-bottom: -1rem; //added margin spacing to limit space b/t h2 and cards
+    margin-top: 6rem; /* added margin spacing to the title textText */
+    margin-bottom: -1rem; /* added margin spacing to limit space b/t h2 and cards */
   }
   h3,
   h4,
@@ -107,13 +107,13 @@ a {
     margin-bottom: 10px;
   }
 
-  // responsive images in rich text
+  /* responsive images in rich text */
   .ms-rtestate-field img {
     max-width: 100% !important;
     height: auto !important;
   }
 
-  // accordion
+  /* accordion */
   .bah-accordion {
     .ui-accordion-content {
       padding: 10px 20px;
@@ -165,7 +165,7 @@ a {
       }
     }
   }
-  // accordion
+  /* accordion */
   aside {
     .bah-accordion {
       h4.ui-accordion-header {
@@ -173,10 +173,9 @@ a {
       }
     }
   }
-
 }
 
-// main section
+/* main section */
 section.main {
   h1.page-title {
     display: none;
@@ -190,27 +189,27 @@ section.main {
   }
 }
 
-// grey bar / page content
+/* grey bar / page content */
 .grey-container {
   display: none;
   padding: 50px 30px;
   background: $gray-lighter;
   text-align: center !important;
-  font-size: ceil(($font-size-base * 1.7)); // 24px
+  font-size: ceil(($font-size-base * 1.7)); /* 24px */
 
   * {
     text-align: center !important;
   }
 }
 
-// sidebar
+/* sidebar */
 aside.main-sidebar {
   background: #eee;
   padding: 40px 30px;
   display: none;
 }
 
-// leadership
+/* leadership */
 .triangle-container {
   @media screen and (min-width: $screen-sm){
     padding:75px 0;
@@ -222,7 +221,7 @@ aside.main-sidebar {
   }
 }
 
-// scrolling indicator
+/* scrolling indicator */
 .scroll-down-arrow {
   position: absolute;
   z-index: 9;
@@ -234,7 +233,7 @@ aside.main-sidebar {
   border-radius: 50%;
   text-align: center;
   line-height: 67px;
-  bottom: 1rem; //scroll-down-arrow changed from 5% to 1rem
+  bottom: 1rem; /* scroll-down-arrow changed from 5% to 1rem */
   left: 50%;
   margin-left: -30px;
   opacity: 0;

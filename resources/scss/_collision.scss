@@ -4,7 +4,7 @@
  *
  */
 
-// reset box sizing for sharepoint elements when necessary
+/* reset box sizing for sharepoint elements when necessary */
 #suiteBar *,
 .ms-cui-menu,
 .ms-cui-menu *,
@@ -21,12 +21,12 @@
   box-sizing: content-box;
 }
 
-// smooth scrolling on touch devices
+/* smooth scrolling on touch devices */
 #s4-workspace {
   -webkit-overflow-scrolling: touch;
 }
 
-// drag and drop target
+/* drag and drop target */
 #ms-dnd-dropbox {
   margin-top: 85px !important;
   position: fixed !important;

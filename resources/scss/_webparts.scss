@@ -4,7 +4,7 @@
  *
  */
 
-// web part vertical spacing
+/*  web part vertical spacing */
 .ms-webpartzone-cell {
   margin-bottom: 0;
 
@@ -22,7 +22,7 @@
 
 }
 
-// web part titles
+/*  web part titles */
 .ms-webpart-chrome-title {
   margin-bottom: 0;
 
@@ -53,14 +53,14 @@
 
 }
 
-// web part zone labels
+/*  web part zone labels */
 .ms-SPZoneLabel {
   color: $gray;
   font-size: $font-size-base;
   text-align: center;
 }
 
-// add web part buttons
+/*  add web part buttons */
 .ms-WPAddButton {
   background: $gray-dark;
   border: 0;
@@ -81,7 +81,7 @@
 
 }
 
-// web part zones
+/*  web part zones */
 .ms-SPZone.ms-webpart-zone,
 .ms-SPZone.ms-webpart-zone:hover {
   border: 1px dashed $gray-light;
@@ -96,7 +96,7 @@
   padding: 0;
 }
 
-// web part properties
+/*  web part properties */
 td#MSOTlPn_MainTD {
   background: $gray-lighter;
   bottom: 0;
@@ -117,7 +117,7 @@ td#MSOTlPn_MainTD {
     display: none;
   }
 
-  // inputs
+  /*  inputs */
   textarea,
   input[type=text],
   input[type=file],
@@ -131,7 +131,7 @@ td#MSOTlPn_MainTD {
     height: auto;
   }
 
-  // buttons
+  /*  buttons */
   button,
   input[type=reset],
   input[type=button],
@@ -141,7 +141,7 @@ td#MSOTlPn_MainTD {
 
 }
 
-// tiles
+/*  tiles */
 .ms-storefront-appiconspan {
   background-color: $brand-primary;
 }
@@ -150,13 +150,13 @@ td#MSOTlPn_MainTD {
   background-color: transparentize($brand-primary, .9);
 }
 
-// calendars
+/*  calendars */
 .ms-quickLaunch table.ms-picker-table td.ms-picker-monthselected {
   background-color: transparentize($gray-superlight, .95);
   border-color: $gray-superlight;
 }
 
-// dialogs
+/*  dialogs */
 html.ms-dialog {
 
   #s4-workspace {
@@ -183,7 +183,7 @@ html.ms-dialog {
 
 }
 
-// discussions
+/*  discussions */
 .ms-comm-rootBestBackground {
   background-color: $gray-light;
   .ms-inputBox {
@@ -191,8 +191,8 @@ html.ms-dialog {
   }
 }
 
-// custom web parts
-// list editor
+/*  custom web parts */
+/*  list editor */
 .edit-mode-panel {
   margin-top: 6px;
 
@@ -211,7 +211,7 @@ html.ms-dialog {
   }
 }
 
-// error
+/*  error */
 .list-error {
   color: #cc0000;
   padding: 20px;
@@ -219,7 +219,7 @@ html.ms-dialog {
   border-radius: 7px;
 }
 
-// info
+/*  info */
 .list-info {
   color: $color-greyblue;
   padding: 20px;
