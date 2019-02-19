@@ -7,14 +7,16 @@ const concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const autoprefixer = require("gulp-autoprefixer");
-const watch = require("gulp-watch");
+const zip = require("gulp-zip");
 
 // paths
 const RESOURCES_SCRIPTS_PATH = "resources/js/*.js";
 const RESOURCES_STYLES_PATH = "resources/scss/*.scss";
+const DIST_SCRIPTS_PATH = "_catalogs/masterpage/bah-ld/js";
+const DIST_STYLES_PATH = "_catalogs/masterpage/bah-ld/css";
 
-const DEST_SCRIPTS_PATH = "_catalogs/masterpage/bah-ld/js";
-const DEST_STYLES_PATH = "_catalogs/masterpage/bah-ld/css";
+const RESOURCES_BUILD_PATH = "_catalogs/masterpage/bah-ld/**";
+const DIST_BUILD_PATH = "dist";
 
 // scripts task
 gulp.task("scripts", () => {
@@ -38,7 +40,7 @@ gulp.task("scripts", () => {
     .pipe(uglify())
     .pipe(concat("app.js"))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(DEST_SCRIPTS_PATH));
+    .pipe(gulp.dest(DIST_SCRIPTS_PATH));
 });
 
 // styles task
@@ -62,7 +64,7 @@ gulp.task("styles", () => {
       })
     )
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest(DEST_STYLES_PATH));
+    .pipe(gulp.dest(DIST_STYLES_PATH));
 });
 
 gulp.task("watch", () => {
@@ -71,6 +73,15 @@ gulp.task("watch", () => {
   gulp.watch(RESOURCES_STYLES_PATH, gulp.series("styles"));
 });
 
+gulp.task("build", () => {
+  console.log("Starting build task");
+  return gulp
+    .src(RESOURCES_BUILD_PATH)
+    .pipe(zip("bah-ld.zip"))
+    .pipe(gulp.dest(DIST_BUILD_PATH));
+});
+
 gulp.task("default", gulp.series("watch", () => {
-  console.log("Starting default task");
-}));
+    console.log("Starting default task");
+  })
+);
