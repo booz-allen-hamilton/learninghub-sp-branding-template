@@ -7,6 +7,7 @@ const concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const autoprefixer = require("gulp-autoprefixer");
+const watch = require("gulp-watch");
 
 // paths
 const RESOURCES_SCRIPTS_PATH = "resources/js/*.js";
@@ -44,26 +45,32 @@ gulp.task("scripts", () => {
 gulp.task("styles", () => {
   console.log("Starting styles task");
 
-  return (
-    gulp
-      .src(RESOURCES_STYLES_PATH)
-      .pipe(
-        plumber(function(err) {
-          console.log("Styles task error");
-          console.log(err);
-          this.emit("end");
-        })
-      )
-      .pipe(sourcemaps.init())
-      .pipe(autoprefixer())
-      .pipe(
-        sass({
-          outputStyle: "compressed"
-        })
-      )
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest(DEST_STYLES_PATH))
-  );
+  return gulp
+    .src(RESOURCES_STYLES_PATH)
+    .pipe(
+      plumber(function(err) {
+        console.log("Styles task error");
+        console.log(err);
+        this.emit("end");
+      })
+    )
+    .pipe(sourcemaps.init())
+    .pipe(autoprefixer())
+    .pipe(
+      sass({
+        outputStyle: "compressed"
+      })
+    )
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(DEST_STYLES_PATH));
 });
 
-gulp.task("default", () => {});
+gulp.task("watch", () => {
+  console.log("Starting watch task");
+  gulp.watch(RESOURCES_SCRIPTS_PATH, gulp.series("scripts"));
+  gulp.watch(RESOURCES_STYLES_PATH, gulp.series("styles"));
+});
+
+gulp.task("default", gulp.series("watch", () => {
+  console.log("Starting default task");
+}));
