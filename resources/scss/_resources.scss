@@ -29,11 +29,12 @@
         height: 16px;
         width: 16px;
         float:left;
+        margin-bottom: 5px; //may want to give it some margin space on the bottom of the element 
       } // this is new for the icon and you may have to manipulate it to get it to look right 
       
       .resource-icon-label {
         font-size: 16px;
-        margin-bottom:5px 
+        margin-bottom:5px; //may want to give it some margin space on the bottom of the element 
       } //this is new for the icon label and you may have to manipulate it to get it to look right
       
       
