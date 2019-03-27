@@ -39,7 +39,7 @@ module.exports = {
         if(!bones.page.editmode){
           lists.getListItems({
             listname: listname,
-            fields: 'Title,Desc,Enabled,LinkURL,SortOrder,Id,OpenLinkInNewWindow',
+            fields: 'Title,Desc,Enabled,LinkURL,SortOrder,Id,OpenLinkInNewWindow,Icon,IconLabel',
             orderby: 'SortOrder'
           },function(items){
             var itemsdata = items.d.results;
@@ -50,6 +50,8 @@ module.exports = {
               var thisEnabled = itemsdata[i].Enabled;
               var thisID = itemsdata[i].Id;
               var newWindow = itemsdata[i].OpenLinkInNewWindow;
+              var thisIcon = itemsdata[i].Icon;
+              var thisIconLabel = itemsdata[i].IconLabel;
 
               if(itemsdata[i].Desc === null){
                 thisDesc = '';
@@ -59,12 +61,12 @@ module.exports = {
                 if(itemsdata[i].LinkURL != null && itemsdata[i].LinkURL != undefined) {
                   var thisUrl = itemsdata[i].LinkURL.Url;
                   if(newWindow){
-                    thiscontainer.append('<a href="'+thisUrl+'" class="resource-item" target="_blank"><div class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></a>');
+                    thiscontainer.append('<a href="'+thisUrl+'" class="resource-item" target="_blank"><div style="width:350px;" class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><div class="resource-icon">'+thisIcon'</div><div class="resource-icon-label">'+thisIconLabel'</div><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></a>');
                   } else {
-                    thiscontainer.append('<a href="'+thisUrl+'" class="resource-item"><div class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></a>');
+                    thiscontainer.append('<a href="'+thisUrl+'" class="resource-item"><div style="width:350px;" class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><div class="resource-icon">'+thisIcon'</div><div class="resource-icon-label">'+thisIconLabel'</div><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></a>');
                   }
                 } else {
-                  thiscontainer.append('<div class="resource-item"><div class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></div>');
+                  thiscontainer.append('<div class="resource-item"><div style="width:350px;" class="resource-image resource-image-'+thisID+'"></div><div class="resource-content"><div class="resource-icon">'+thisIcon'</div><div class="resource-icon-label">'+thisIconLabel'</div><h2 class="resource-title">'+thisTitle+'</h2><div class="resource-desc">'+thisDesc+'</div></div></div>');
                 }
               }
 
