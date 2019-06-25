@@ -25,7 +25,7 @@ gulp.task("delete:dist", () => {
   return del([DIST_BUILD_PATH]);
 });
 
-// build:zip task
+// build:zip task 
 gulp.task("build:zip", () =>{
   console.log("Starting build:zip task");
   return gulp
