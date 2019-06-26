@@ -24,20 +24,21 @@
       padding: 25px;
       width: 255px; //may want to change the width since the cards are going to be wider
       text-align: left;
-      
+
       .resource-icon {
         height: 16px;
         width: 16px;
         float:left;
-      } // this is new for the icon and you may have to manipulate it to get it to look right 
-      
+      } // this is new for the icon and you may have to manipulate it to get it to look right
+
       .resource-icon-label {
         font-size: 16px;
-        margin-bottom:5px 
+        margin-bottom:5px
       } //this is new for the icon label and you may have to manipulate it to get it to look right
-      
-      
+
+
       // if you need help aligning these elements, use this site: https://www.w3schools.com/CSS/css_align.asp
+      //test gulp watch
 
       h2.resource-title {
         text-transform: none !important;
