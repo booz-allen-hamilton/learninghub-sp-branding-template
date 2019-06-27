@@ -12,19 +12,19 @@
     color: #55555a;
     margin: 13px 26px 13px 0;
     vertical-align: top;
-    height: 360px;
+    height: 460px;
     overflow: hidden;
     text-decoration: none;
     opacity: .6;
-    background-image: linear-gradient(30deg, rgba(1, 166, 182, .05) 0%, rgba(47, 132, 140, .1) 100%);
-    backface-visibility: hidden;
+    background-image: linear-gradient(30deg, rgba(1, 166, 182, .05) 0%, rgba(47, 132, 140, .1) 50%);
+    /* backface-visibility: hidden;
     transform: scale(1);
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -ms-transform: scale(1);
     z-index: 1;
-    transition: .4s;
+    transition: .4s; */
 
       &:hover  {
         text-decoration: none;
@@ -32,25 +32,25 @@
         color: white;
         box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.35);
         z-index: 1;
-        transform: scale(0);
+        /* transform: scale(0);
         -webkit-transform: scale(0);
         -moz-transform: scale(0);
         -o-transform: scale(0);
         -ms-transform: scale(0);
         opacity: 1;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; */
       }
 
     }
 
     .resource-content {
       padding: 25px;
-      width: 300px; /* may want to change the width since the cards are going to be wider */
+      width: 400px; /* may want to change the width since the cards are going to be wider */
       text-align: left;
 
       .resource-image {
         height: 150px;
-        width: 300px;
+        width: 400px;
         opacity: .8;
 
         &:hover {
@@ -98,7 +98,7 @@
 
 /* a.resource-item {
   opacity: 1;
-  width: 300px; // change the width of the card here
+  width: 400px; // change the width of the card here
   height: 360px; // change the height of the card here
 }
  @media (min-width: 576px) {
