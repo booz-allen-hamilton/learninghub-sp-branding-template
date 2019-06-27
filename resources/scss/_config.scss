@@ -40,14 +40,14 @@ $text-color: $gray-dark;
 
 /* links */
 $link-color: $brand-primary;
-$link-hover-color: darken($link-color, 15%);
+$link-hover-color: darken($link-color, 25%);
 $link-hover-decoration: underline;
 
 /* tiles hover */
 $tile-0-color-hover: $color-purple;
 $tile-0-color: darken($color-purple, 15%);
-$tile-2-color-hover: $color-brightyellow;
-$tile-2-color: darken($color-brightyellow, 15%);
+$tile-1-color-hover: $color-brightyellow;
+$tile-1-color: darken($color-brightyellow, 15%);
 
 /* typography */
 $font-family-sans-serif: 'Calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;

@@ -55,29 +55,29 @@
     }
 
     &.tiles-link-0,
-    &.tiles-link-2,
-    &.tiles-link-4 {
+    &.tiles-link-1,
+    &.tiles-link-2 {
       color: #fff;
     }
     &.tiles-link-0 {
-      background: $tile-0-color;
+      background-color: $tile-0-color !important;
 
       &:hover {
-        background: $tile-0-color-hover;
+        background-color: $tile-0-color-hover !important;
+      }
+    }
+    &.tiles-link-1 {
+      background-color: $tile-1-color !important;
+
+      &:hover {
+        background-color: $tile-1-color-hover !important;
       }
     }
     &.tiles-link-2 {
-      background: $tile-2-color;
+      background-color: $link-hover-color !important;
 
       &:hover {
-        background: $tile-2-color-hover;
-      }
-    }
-    &.tiles-link-4 {
-      background: $link-hover-color;
-
-      &:hover {
-        background:$color-teal;
+        background-color:$color-teal !important;
       }
     }
   }

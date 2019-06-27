@@ -17,7 +17,8 @@
       position: relative;
       left: 50%;
       transform: translate(-50%,0);
-      opacity: .7;
+      opacity: 1;
+      }
     }
   }
   .hero-text {
@@ -45,7 +46,7 @@
           width: 1600px;
           height: 100%;
           top: 0;
-          opacity: .4;
+          opacity: 0;
         }
       }
       &:before {
