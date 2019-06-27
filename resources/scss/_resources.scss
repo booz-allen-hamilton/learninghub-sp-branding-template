@@ -6,7 +6,7 @@
   @media screen and (min-width: $screen-sm){
     text-align: left;
   }
-  
+
   .resource-item {
     box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.35);
     display: inline-block;
@@ -53,11 +53,11 @@
         font-size: 16px;
         line-height: 20px;
       }
+    }
 
-      a.resource-item {
-        opacity: 1;
-        width: 300px !important; // change the width of the card here
-        height: 350px !important; //change the height of the card here
-      }
+    a.resource-item {
+      opacity: 1;
+      width: 300px !important; // change the width of the card here
+      height: 350px !important; //change the height of the card here
     }
 }
