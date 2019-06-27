@@ -5,7 +5,7 @@
     display: block;
     text-align: center;
     position: relative;
-    height: 150px;
+    height: 125px;
     color: $color-darkblue;
 
     &:hover {
@@ -32,10 +32,10 @@
       /* -o-transition: font-size .75s ease;  */
       /* transition: font-size .75s ease;  */
 
-      /* 
+      /*
       &:hover {
         font-size:1.2rem;
-      }  
+      }
       */
 
       .tiles-link-title {
@@ -60,13 +60,25 @@
       color: #fff;
     }
     &.tiles-link-0 {
-      background: $color-darkblue;
+      background: $tile-0-color;
+
+      &:hover {
+        background: $tile-0-color-hover;
+      }
     }
     &.tiles-link-2 {
-      background: $color-teal;
+      background: $tile-2-color;
+
+      &:hover {
+        background: $tile-2-color-hover;
+      }
     }
     &.tiles-link-4 {
-      background: $color-green;
+      background: $link-hover-color;
+
+      &:hover {
+        background:$color-teal;
+      }
     }
   }
 }

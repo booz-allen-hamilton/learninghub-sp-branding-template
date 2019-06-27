@@ -31,6 +31,8 @@ $color-lightgreyblue: #858593;
 $color-yellow: #ccda28;
 $color-green: #71a84e;
 $color-red: #d24626;
+$color-purple: #863D81;
+$color-brightyellow: #f6a800;
 
 /* body */
 $body-bg: $gray-superlight;
@@ -40,6 +42,12 @@ $text-color: $gray-dark;
 $link-color: $brand-primary;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
+
+/* tiles hover */
+$tile-0-color-hover: $color-purple;
+$tile-0-color: darken($color-purple, 15%);
+$tile-2-color-hover: $color-brightyellow;
+$tile-2-color: darken($color-brightyellow, 15%);
 
 /* typography */
 $font-family-sans-serif: 'Calibri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
