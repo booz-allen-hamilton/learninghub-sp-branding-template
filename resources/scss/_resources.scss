@@ -26,22 +26,23 @@
     z-index: 1;
     transition: .4s;
 
-    &:hover  {
-      text-decoration: none;
-      background-color: #01A6B6;
-      color: white;
-      box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.35);
-      z-index: 1;
-      transform: scale(0);
-      -webkit-transform: scale(0);
-      -moz-transform: scale(0);
-      -o-transform: scale(0);
-      -ms-transform: scale(0);
-      opacity: 1;
-      transition: all 0.4s ease-in-out;
-}
+      &:hover  {
+        text-decoration: none;
+        background-color: #01A6B6;
+        color: white;
+        box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.35);
+        z-index: 1;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        -ms-transform: scale(0);
+        opacity: 1;
+        transition: all 0.4s ease-in-out;
+      }
 
     }
+
     .resource-content {
       padding: 25px;
       width: 300px; /* may want to change the width since the cards are going to be wider */
@@ -92,15 +93,15 @@
         padding: 5%;
       } */
     }
-  }
-  a.resource-item {
-    opacity: 1;
-    width: 300px; /* change the width of the card here */
-    height: 360px; /* change the height of the card here */
-  }
+
 }
 
-/* @media (min-width: 576px) {
+/* a.resource-item {
+  opacity: 1;
+  width: 300px; // change the width of the card here
+  height: 360px; // change the height of the card here
+}
+ @media (min-width: 576px) {
   .resource-item {
     flex: 0 0 calc(100% / 1 - 22.5px * 2); } }
 @media (min-width: 768px) {
